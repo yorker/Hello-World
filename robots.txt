@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /core
+Disallow: /templates_c
+Disallow: /plugins
+Disallow: /vendors
+Disallow: /administrator

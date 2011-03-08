@@ -1,0 +1,85 @@
+* {
+	margin:0px;
+	padding:0px;
+}
+
+/*定义clearfix*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+
+/*英文强制换行*/
+.word{
+	word-break:break-all;
+}
+
+
+/*定义通用样式 begin*/
+a, a:active, a:visited {
+	color:#333333;
+	text-decoration:none;
+}
+a:hover {
+	color:#FF0000;
+}
+div.blank {
+	clear:both;
+	height:8px;
+	overflow:hidden;
+}
+.red {
+	color:#FF0000;
+}
+.green {
+	color:#00FF00;
+}
+.bold {
+	font-weight:bold;
+}
+.pointer {
+	cursor:pointer;
+}
+.clr {
+	clear:both;
+	height:0px;
+	overflow:hidden;
+}
+.fl {
+	float:left;
+}
+.fr {
+	float:right;
+}
+ul, li {
+	list-style-type:none;	
+}
+
+table.cfwrap {
+	width:100%;
+	border-spacing:0px;
+}
+
+input[type=text], input[type=password] {
+	padding:3px 2px 2px 2px;
+	border:1px solid #CCCCCC;
+}
+
+
+/*定义通用样式 end*/

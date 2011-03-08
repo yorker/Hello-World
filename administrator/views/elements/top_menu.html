@@ -1,0 +1,31 @@
+<{if !empty($top_menu)}>
+<ul id="topmenu">
+	<{foreach from=$top_menu item="top"}>
+		<{if $admin.admin_rank >= $top.rank}>
+			<li class="node">
+				<{load_page href=$top.url link=$top.name}>
+				<{if !empty($top.sub)}>
+					<ul>
+						<{foreach from=$top.sub item="sub1"}>
+							<{if $admin.admin_rank>=$sub1.rank}>
+								<{if !empty($sub1.sub)}>
+									<li class="subnode">								
+										<{load_page href=$sub1.url link=$sub1.name class="arrow"}>
+										<ul>
+											<{foreach from=$sub1.sub item="sub2"}>
+												<{if $admin.admin_rank>=$sub2.rank}><li><{load_page href=$sub2.url link=$sub2.name}></li><{/if}>
+											<{/foreach}>
+										</ul>								
+									</li>
+								<{else}>
+									<li><{load_page href=$sub1.url link=$sub1.name}></li>
+								<{/if}>
+							<{/if}>
+						<{/foreach}>					
+					</ul>
+				<{/if}>
+			</li>
+		<{/if}>
+	<{/foreach}>
+</ul>
+<{/if}>

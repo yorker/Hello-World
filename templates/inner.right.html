@@ -1,0 +1,27 @@
+	</div>
+	<div class="fr_wrap">
+		<div class="fr_inner_wrap">
+			<div class="module">
+				<h2><{$lang.art_category}> <span>Categories</span></h2>
+				<div class="body">
+					<ul class="list">
+						<{foreach from=$user_cats item="itm"}>
+							<li><a href="<{$itm.caturl}>"><{$itm.cat_name}></a></li>
+						<{/foreach}>
+					</ul>
+				</div>
+			</div>
+			<div class="blank">&nbsp;</div>
+			<div class="module">
+				<h2><{$lang.download_nav}> <span>Download Navigation</span></h2>
+				<div class="body">
+					<ul class="list">
+						<{foreach from=$download_cat item="itm"}>
+							<li><a href="<{$itm.caturl}>"><{$itm.name}></a></li>
+						<{/foreach}>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

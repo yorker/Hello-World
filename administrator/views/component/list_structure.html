@@ -1,0 +1,38 @@
+<table class="adminlist" cellspacing="1">
+<thead>
+	<tr>
+		<th width="30"><input type="checkbox" onclick="checkAll(this, 'chkflag')" title="<{$lang.check_all_none}>"/></th>
+		<th><{$lang.}></th>
+		<th><{$lang.}></th>
+		<th><{$lang.}></th>		
+		<th><{$lang.}></th>
+		<th><{$lang.unit}></th>
+		<th><{$lang.}></th>
+		<th width="100"><{$lang.operation}></th>
+	</tr>
+</thead>
+<tbody>
+	<{foreach from=$list item="itm" name="fname"}>
+	<tr class="row<{$smarty.foreach.fname.iteration%2}>">
+		<td align="center"><input type="checkbox" name="cid" value="<{$itm.}>" class="chkflag"/></td>
+		<td><{$itm.}></td>
+		<td><{$itm.}></td>
+		<td><{$itm.}></td>
+		<td><{$itm.}></td>
+		<td><{$itm.}></td>
+		<td><{$itm.}></td>
+		<td align="center">
+			<{admin_edit href="编辑链接" id=$itm.}>
+			<{admin_delete t="待操作数据表" id=$itm. url="操作完成后重载的页面"}>
+		</td>
+	</tr>
+	<{/foreach}>
+</tbody>
+<tfoot>
+	<tr>
+		<td colspan="8">
+			<input type="button" value="<{$lang.batch_delete}>" class="btn" onclick="batchDeleteByCheckbox('待操作的数据表', 'chkflag', '操作完成后重载的页面')"/>
+		</td>
+	</tr>
+</tfoot>
+</table>

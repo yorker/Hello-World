@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>test</title>
+
+<link href="css/swfupload.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="js/swfupload.js"></script>
+<script type="text/javascript" src="js/handlers.js"></script>
+<script type="text/javascript">
+var swfu;
+
+$(document).ready(function() {	
+	swfu = new SWFUpload({
+		// Backend Settings
+		upload_url: "includes/swfupload_product.php",
+		post_params: {"PHPSESSID": "<{$sessionid}>"},
+
+		// File Upload Settings
+		file_size_limit : "4 MB",	 //2MB
+		file_types : "*.jpg; *.gif; *.png; *.jpeg",
+		file_types_description : "JPEG/GIF/PNG image",
+		file_upload_limit : "0",
+
+		// Event Handler Settings - these functions as defined in Handlers.js
+		// The handlers are not part of SWFUpload but are part of my website and control how
+		// my website reacts to the SWFUpload events.
+		file_queue_error_handler : fileQueueError,
+		file_dialog_complete_handler : fileDialogComplete,
+		upload_progress_handler : uploadProgress,
+		upload_error_handler : uploadError,
+		upload_success_handler : uploadSuccess,
+		upload_complete_handler : uploadComplete,
+
+		// Button Settings
+		button_image_url : "images/SmallSpyGlassWithTransperancy_17x18.png",
+		button_placeholder_id : "spanButtonPlaceholder",
+		button_width: 180,
+		button_height: 18,
+		button_text : '<span class="button"><{$lang.please_choose_image}></span>',
+		button_text_style : '.button {font-size: 12pt; }',
+		button_text_top_padding: 0,
+		button_text_left_padding: 18,
+		button_window_mode: SWFUpload.WINDOW_MODE.TRANSPARENT,
+		button_cursor: SWFUpload.CURSOR.HAND,
+		
+		// Flash Settings
+		flash_url : "includes/swfupload.swf",
+
+		custom_settings : {
+			upload_target : "divFileProgressContainer"
+		},
+		
+		// Debug Settings
+		debug: true
+	});	
+});
+</script>
+
+</head>
+
+<body>
+<div style="border: solid 1px #777777; background-color: #CCCCCC; width:181px;"><span id="spanButtonPlaceholder"></span></div>
+<div id="divFileProgressContainer" style="padding: 8px 0px"></div>
+<div id="thumbnails"></div>
+
+
+</body>
+</html>

@@ -1,0 +1,295 @@
+div.highslide-maincontent h3 {
+	color:#222222;
+	font-size:14px;	
+}
+div.highslide-maincontent div {
+	margin-top:12px;
+	font-size:12px;
+}
+div.highslide-maincontent dl {
+	margin-top:20px;
+	color:#777777;
+}
+div.highslide-maincontent dl dd {
+	margin-top:8px;
+}
+
+div.subnav {
+	padding:5px;	
+}
+
+div.subnav p {
+	margin:8px 0px 8px 0px;
+}
+
+div.subnav div.left {
+	float:left;
+}
+div.subnav div.right {
+	float:right;
+}
+
+textarea.enfont, input[type=text].enfont {
+	font-family:"Courier New", Courier, monospace;
+	font-size:16px;
+	font-weight:bold;
+	color:#777777;
+}
+
+img.opt {
+	cursor:pointer;
+	margin-left:8px;
+}
+img.star {
+	cursor:pointer;
+	margin-left:0px;
+}
+
+span.steinfo {
+	margin-left:8px;
+	color:#818FD0;
+	cursor:pointer;
+}
+
+div.tt {
+	padding:8px;
+	*padding-bottom:2px;
+	font-size:14px;
+	border-bottom:1px dotted #ECECEC;
+}
+
+div.itm {
+	margin-bottom:8px;
+}
+
+.rowh {
+	background-color:#F0F0F0;
+}
+
+div.tt div.fl {
+	width:75%;	
+}
+
+div.tt div.fr {
+	width:23%;	
+	font-weight:bold;
+	color:#777777;
+	font-size:14px;
+	font-family:"Courier New", Courier, monospace;
+	background-color:#FBF5EE;
+}
+
+div.sentence {
+	color:#007700;
+	font-weight:bold;
+	font-size:16px;
+}
+
+textarea.enfont {
+	width:100%;
+	border:1px dotted #CECECE;
+}
+
+.bnt {
+	border:1px solid #CCCCCC;
+	padding:4px;
+	background-color:#F0F0F0;
+}
+
+div.comment {
+	color:#777777;
+	font-size:13px;
+	padding:8px 0px 8px 20px;
+	background:url(../images/info.png) no-repeat scroll 0px 50%;
+}
+span.comment {
+	color:#777777;
+	font-size:13px;
+	padding-left:20px;
+	background:url(../images/info.png) no-repeat scroll 0px 50%;
+}
+
+.blue {
+	color:#2571E2;
+}
+
+.red {
+	color:#FF0000;
+}
+.red a {
+	color:#FF0000;
+}
+
+
+div.course_part {
+}
+
+div.course_part p.audio {
+	padding:2px 0px 18px 0px;
+}
+
+
+div.course_part div.body p {
+	margin-top:8px;
+}
+
+div.cnt_filter {
+	padding: 4px 12px;
+	border-left:1px solid #CCCCCC;
+	border-right:1px solid #CCCCCC;
+
+}
+div.cnt_filter div.fl {
+	background:url(../images/icon_search.gif) no-repeat scroll 2px 50%;
+	padding:4px 0px 4px 30px;
+}
+div.cnt_filter div.fl * {
+	vertical-align:middle;
+}
+div.cnt_filter div.fl input[TYPE=TEXT] {
+	padding:1px 0px;
+}
+
+div.cnt_filter div.fr {
+	padding:4px 12px 4px 0px;
+}
+div.cnt_filter div.fr * {
+	vertical-align:middle;
+}
+input.search_init {
+	color:#AAAAAA;
+}
+
+
+div.view_gallery {
+}
+div.view_gallery div.vi {
+	float:left;
+	width:127px;
+	text-align:center;
+	height:200px;
+	margin:15px 15px 8px 15px;
+}
+div.view_gallery div.vi img {
+	width:125px;
+	height:125px;
+}
+div.view_gallery div.vi div.operate {
+	padding-top:6px;
+}
+
+div.view_gallery div.vi div.dyna_edit {
+	padding-top:12px;
+	height:32px;
+	overflow:hidden;
+}
+
+
+div#add_gallery {
+	
+}
+div#add_gallery table.item {
+	width:100%;
+}
+div#add_gallery table.item tr td {
+	padding:4px;
+}
+div#add_gallery table.item tr td table.inputarea {
+	width:100%;
+}
+
+table.notepad_list {
+	width:100%;
+}
+table.notepad_list tr td {
+	padding:8px 6px;
+	border-bottom:1px dashed #DDDDDD;
+}
+table.notepad_list tr.ho:hover {
+	background-color:#F9F9E9;
+}
+
+table.notepad_list tr td div.note_content {
+	border:1px dashed #BBBBBB;
+	padding:6px;
+	margin-top:8px;
+}
+table.notepad_list tr td div.note_content p.last_update {
+	padding:12px 4px;
+	text-align:right;
+	text-decoration:underline;
+}
+
+div.sys_conf_update_cache_file {
+	text-align:right;
+	padding:12px;
+}
+
+div.op_bar {
+	padding:8px 0px;
+}
+
+/**Start page style**/
+div.startpage {
+	width:85%;
+	margin:0px auto;
+}
+div.startpage div.module {
+	border-bottom:1px dashed #8D94AE;
+	padding:4px 8px;
+}
+div.startpage div.module h2 {
+	color:#777777;
+	font-weight:normal;
+	font-size:14px;
+	padding:2px 0px;
+	width:50%;
+	border-bottom:1px solid #CCCCCC;
+}
+div.startpage div.module div.body {
+	padding:8px 0px;
+}
+
+div.startpage div.module div.body ul.shortcut {
+	
+}
+div.startpage div.module div.body ul.shortcut li {
+	float:left;
+	width:120px;
+}
+div.startpage div.module div.body ul.shortcut li a {
+	text-decoration:underline;
+}
+
+div.startpage div.module div.body table.system_check {
+	width:90%;
+}
+div.startpage div.module div.body table.system_check tr td {
+	padding:5px;
+	border-bottom:1px solid #DEEEEF;
+}
+
+div.international {
+	padding:4px 0px;
+}
+div.international div.k {
+	font-size:16px;
+	padding:2px 0px;
+}
+div.international div.v {
+	padding:2px 0px;
+}
+div.international div.v textarea {
+	padding:2px;
+	font-size:14px;
+	height:40px;
+	width:80%;
+}
+div.inter_submit {
+	padding:8px;
+	text-align:center;
+}
+div.flow_statistics_op_bar {
+	text-align:right; 
+	padding-right:15px
+}

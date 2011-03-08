@@ -1,0 +1,41 @@
+#login-box {
+	margin:0 auto;	
+	width:500px;
+		
+}
+#login {
+	border-left:1px solid #CCCCCC;
+	border-right:1px solid #CCCCCC;
+}
+
+#login .lock {
+	background:url(../images/j_login_lock.jpg) no-repeat;	
+	height:140px;
+}
+
+#login h1 {
+	font-size:18px;
+	padding:8px;
+	padding-left:16px;
+}
+
+.loginform {
+	border-left:1px solid #CCCCCC;
+	border-right:1px solid #CCCCCC;
+}
+
+div.login_wrap {
+	padding:80px 0 20px 0px;
+}
+div.login_wrap div.remember_me * {
+	vertical-align:middle;
+}
+div.login_wrap div.captcha * {
+	vertical-align:middle;
+}
+
+table.login {
+}
+table.login div.return_index {
+	text-align:left;
+}

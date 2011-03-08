@@ -1,0 +1,32 @@
+#pagination {
+	text-align:center;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+#pagination span a {
+	padding:2px 3px 2px 3px;	
+	margin:2px;
+}
+#pagination span a strong {
+	cursor:default;
+}
+
+#pagination span.first a {
+	background:url(../images/LeftEnd.gif) no-repeat scroll center center;
+	width:16px;
+}
+
+#pagination span.prev a {
+	background:url(../images/Left.gif) no-repeat scroll center center;
+	width:16px;
+}
+
+#pagination span.next a {
+	background:url(../images/Right.gif) no-repeat scroll center center;
+	width:16px;
+}
+
+#pagination span.last a {
+	background:url(../images/RightEnd.gif) no-repeat scroll center center;
+	width:16px;
+}

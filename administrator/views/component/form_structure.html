@@ -1,0 +1,43 @@
+<!--
+ 这里是管理中心定义的表单通用结构形式
+-->
+
+<form action="start.php" method="post" onsubmit="return ajaxDoSubmit(this, 'start.php', 1)">
+	<div class="adminform">
+		<div class="f_title">请在这里填写您的相关信息！</div>
+		<div class="line clearfix">
+			<div class="f1">姓名</div>
+			<div class="f2">
+				<input type="text" name="name" value="" required="true"/>
+				<div class="note">用户名是必须的</div></div>
+			<div class="f3">
+				<span class="red">&nbsp;*&nbsp;</span>
+				<label class="tip">用户名不能为空。</label>
+			</div>
+			
+		</div>
+		<{text label="用户名" name="username" value="" required="true"}>
+		<div class="line clearfix">
+			<div class="f1">姓名：</div>
+			<div class="f2">
+				<input type="text" name="name" value="" required="true"/>				
+			</div>
+			<div class="f3">
+				<span class="red">&nbsp;*&nbsp;</span>
+				<label class="tip">用户名不能为空。</label>
+			</div>
+			
+		</div>
+		<div class="line clearfix">
+			<div class="f1">姓名：</div>
+			<div class="f2">
+				<input type="text" name="name" value="" required="true"/>
+				<div class="note">用户名是必须的</div></div>
+			<div class="f3">
+				<span class="red">&nbsp;*&nbsp;</span>
+				<label class="tip">用户名不能为空。</label>
+			</div>
+			
+		</div>
+	</div>
+</form>
